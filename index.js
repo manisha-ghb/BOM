@@ -2,7 +2,7 @@ let container = document.querySelector(".container");
 let submitbtn = document.querySelector(".submitbtn");
 let input = document.getElementById("category");
 
-let url = "https://cors-anywhere.herokuapp.com/https://silk-righteous-geometry.glitch.me"
+let url = "https://changeable-spice-plough.glitch.me/products"
 async function getData() {
     try{
         let response = await fetch(`${url}`);
