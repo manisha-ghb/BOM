@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: block;
+            text-align: center;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            font-size: 32px;
+        }
+
+        .container {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container>div {
+            border: 1px solid;
+            margin: 20px;
+            box-shadow: -2px -2px 3px black;
+            border-radius: 10px;
+            height: 300px;
+            width: 500px;
+            text-align: center;
+            background-color: aliceblue;
+        }
+
+        .container>div>img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .container>div p {
+            margin: 8px;
+        }
+
+        .container>div button {
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .form {
+            font-size: 32px;
+            height: 100px;
+            align-content: center;
+        }
+
+        .form select,
+        button {
+            padding: 8px;
+        }
+        .category{
+            color: blue;
+            font-style: italic;
+        }
+        #category{
+            font-style: italic;
+        }
+        .submitbtn{
+            font-style: italic;
+            background-color: green;
+            border-radius: 10px;
+        }
+        .reset{
+            font-style: italic;
+            background-color: orange;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="">
+            <label for="category" class="category">Category :
+                <select id="category" name="category">
+                    <option value=" ">All</option>
+                    <option value="men's clothing">men's Clothing</option>
+                    <option value="women's clothing">women's Clothing</option>
+                    <option value="electronics">electronics</option>
+                    <option value="jewelery">jewelery</option>
+                </select>
+                <button type="button" class="submitbtn">submit</button>
+                <button type="reset" class="reset">reset</button>
+            </label>
+        </form>
+    </div>
+    <div class="container"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
